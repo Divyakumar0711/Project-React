@@ -8,12 +8,12 @@ function App() {
 
   const addValue = () => {
     {
-      counter == 20 ? counter : setCounter(counter + 1);
+      counter == 20 ? counter : setCounter((prevCounter) => prevCounter + 1);
     }
   };
   const removeValue = () => {
     {
-      counter == 0 ? counter : setCounter(counter - 1);
+      counter == 0 ? counter : setCounter((prevCounter) => prevCounter - 1);
     }
   };
   return (
